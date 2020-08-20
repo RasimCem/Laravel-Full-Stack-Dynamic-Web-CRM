@@ -1,0 +1,360 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 15px;
+	letter-spacing: .1rem;
+}
+a{
+	text-decoration: none !important;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	font-size: 1.2rem;
+}
+h1,h2,h3{
+	color: #3d3d3d;
+	font-family: 'Red Rose', cursive;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+nav{
+	width: 100%;
+}
+footer{
+	font-family: 'Red Rose', cursive;
+	color: #fff;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+/*urunler sayfasi */
+.title{
+	margin-top: 2rem;
+	text-align: center;
+}
+/*navbar */
+.navbar{
+	background-color: #d1ccc0;
+}
+.logo-box{
+	width: 25%;
+	padding: .7rem;
+	text-align: center;
+}
+.navbar-brand{
+	font-family: 'Satisfy', cursive;
+	color: #ff3838 !important;
+	font-size: 2rem !important;
+}
+.navbar-brand:hover{
+	color: #ff3838 !important;
+}
+.navbar-links{
+	width: 80%;
+	display: flex;
+	//justify-content: center;
+	justify-content: flex-end;
+    
+}
+.navbar-item{
+	margin: 1rem;
+}
+.navbar-link{
+	font-family: 'Red Rose', cursive;
+	color: #3d3d3d;
+	font-size: 1.5rem;
+}
+.navbar-link:hover{
+	transition: .3s;
+}
+a:hover {
+	color: orangered !important;
+}
+@media screen and (max-width:576px){
+	.navbar-brand{
+		font-size: 17px !important;
+	}
+}
+@media screen and (max-width:992px){
+	html{
+		font-size: 11px;
+	}
+	.container-big{
+		max-width: 100%;
+		text-align: center;
+	}
+	.text-container{
+		max-width: 100%;
+		//text-align: center;
+	}
+}
+@media screen and (max-width:1200px){
+	html{
+		font-size: 13px;
+	}
+	
+}
+@media screen and (max-width:1350px){
+	.navbar-brand{
+		font-size: 17px !important;
+	}
+}
+/*Card */
+.card{
+	margin: 1rem 0;
+	box-shadow: 0px 2px 4px ;
+	text-align: center;
+}
+.price {
+	background-color: #ff3838;
+	border-radius: 50%;
+	color: #fff;
+}
+/* footer */
+.footer{
+	margin-top: 15rem;
+	width: 100%;
+	height: auto;
+	background-color: #2125298f;
+	text-align: center;
+}
+
+footer .contact-item{
+	color: #fff;
+}
+.footer-title{
+	color: #fff;
+}
+/*about*/
+.img-fluid{
+	//box-shadow: 2px 0 5px;
+	
+}
+.about-content{
+	font-family:  'Open Sans', sans-serif;
+	margin: 2rem;
+	font-size: 1.2rem;
+}
+
+/* iletisim */
+.contact-list{
+	margin:4rem;
+}
+.contact-item{
+	display: block;
+	font-size: 1.5rem ;
+	color: #ff3838;
+}
+/* index */
+.container-big{
+	background-color: #d1ccc0;
+	margin: 5rem 0;
+	height: auto;
+}
+.text-container{
+	text-align: center;
+	padding: 3rem;
+	font-size: 1.3rem;
+}
+.mybadge{
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #ff3838;
+	padding: 5px;
+	border-radius: 5%;
+}
+.logo-img {
+	margin: 100px 0;
+}
+/* buttons */
+.btnGit{
+	padding: 1rem;
+	margin-top: 8rem;
+	font-size: 2rem !important;
+	border: 1px solid #ff3838;
+	background-color: transparent;
+	border-radius: 5px;
+	font-family: 'Red Rose', cursive;
+}
+.btnGit:hover, .btn:hover{
+	color: #fff !important;
+	background-color: #ff3838;
+	transition: .4s;
+}
+btn:focus{
+	background-color:black;
+}
+.btn {
+	font-family: 'Red Rose', cursive;
+	border: 1px solid #ff3838 !important;
+	background-color: transparent;
+	border-radius: 5px;
+}
+
+/* social */
+.social-icon{
+	margin: 15px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+.social-icon:hover{
+	color: #ff3838 !important;
+}
+.col-sm-4 li{
+	display: inline-block;
+}
+/* animations*/
+.col-12 img{
+	animation-name: logo-animation;
+	animation-duration: 3s;
+	position:relative;
+}
+.col-md-6 img{
+	animation-name: image-animation-left;
+	animation-duration:4s;
+	position: relative;
+}
+@keyframes logo-animation{
+	0%{transform: scale(1.5);}
+	50%{transform: scale(2);}
+	100%{transform: scale(1);}
+}
+@keyframes image-animation-left{
+	0%{left: -100px;top: 0px;}
+	50%{left: 100px;top: 0px;}
+	100%{left: 0px;top: 0px;}
+}
+/* Eski Login */
+.bg {
+	background: rgb(63,94,251);
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);	
+}
+.login-box{
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.login-title{
+	padding: 1.5rem;
+	font-size: 3rem !important;
+}
+.login-box input{
+	padding: 12px 20px;
+	height: auto;
+	display: block;
+	text-align: center;
+	width: 80%;
+	margin: 1.2rem auto;
+	font-size: 1.2rem;
+}
+/*yeni Login */
+.modal-body input{
+	width: 100%;
+	padding:10px 5px;
+	margin: 5px;
+}
+.modal-body{
+	text-align: center;
+}
+/* admin panel */ 
+.panel-nav{
+	width: 100%;
+	height: auto;
+	background-color:#576574;
+}
+.panel-btn{
+	position: absolute;
+	left: 3rem;
+	top: .7rem;
+	color: #ff3838 !important;
+}
+.panel-btn:hover{
+	color: #fff !important;
+}
+.panel-brand-box{
+	float: right;
+	padding: 1rem;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2f3542;
+  overflow-x: hidden;
+  transition: 0s;
+  padding-top: 70px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  border-top: 1px solid black;
+}
+.sidenav a:last-child{
+	border-bottom: 1px solid black;
+}
+.sidenav a:hover{
+	color: #ff3838 !important;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top:0px;
+    right: 5px;
+    font-size: 35px;
+    margin-left: 50px;
+    border: none;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.panel-item{
+	margin-top: 1rem;
+}
+.form-element{
+	display: inline-block;
+	margin: 5px;
+	width: 100%;
+	//background-color: red;
+}
+.panel-label{
+	width: 25%;
+}
+.panel-input{
+	width: 73%;
+}
+/*panel destek sayfasi */
+.faq-title{
+	margin-top: 1rem;
+	cursor: pointer;
+	//text-align: center;
+	transition: .5s;
+	padding: 2px;
+}
+
+.faq-content{
+	display: none;
+} 
+textarea[id='icerik']{
+	width: 100% !important;
+}
+.fa-plus-circle{
+	cursor: pointer;
+	margin-right: 5px;
+	color: #ff3838;
+}
